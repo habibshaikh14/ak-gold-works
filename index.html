@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AK Gold Works Login</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section id="loginCard" class="card login-card">
+        <div class="brand-block">
+          <p class="eyebrow">Secure Portal</p>
+          <h1>AK Gold Works</h1>
+          <p class="subtitle">Access your workspace with your demo credentials.</p>
+        </div>
+
+        <form id="loginForm" class="login-form">
+          <label for="username">Username</label>
+          <input id="username" name="username" type="text" placeholder="Enter username" required />
+
+          <label for="password">Password</label>
+          <input id="password" name="password" type="password" placeholder="Enter password" required />
+
+          <button type="submit">Sign In</button>
+        </form>
+
+        <p class="hint">Demo users: habib or akhtar<br />Password: akgoldworks</p>
+        <p id="errorMessage" class="error" role="alert"></p>
+      </section>
+
+      <section id="dashboard" class="card dashboard hidden" aria-live="polite">
+        <div class="dashboard-header">
+          <div>
+            <p class="eyebrow">Welcome back</p>
+            <h2><span id="userName">User</span>!</h2>
+          </div>
+          <button id="logoutButton" type="button" class="secondary-button">Logout</button>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card">
+            <h3>Orders</h3>
+            <p class="stat-number">24</p>
+          </article>
+          <article class="stat-card">
+            <h3>Revenue</h3>
+            <p class="stat-number">$18.4k</p>
+          </article>
+          <article class="stat-card">
+            <h3>Open Tasks</h3>
+            <p class="stat-number">7</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
